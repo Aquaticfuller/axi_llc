@@ -255,7 +255,7 @@ module axi_llc_reg_wrap #(
     .hw2reg     ( config_hw2reg ), // Read
 
     // Config
-    .devmode_i  ( 1'b1          )  // If 1, explicit error return for unmapped register access
+    .devmode_i  ( 1'b0          )  // If 1, explicit error return for unmapped register access
   );
 
   // Registerfile agnostic axi_llc toplevel - configured for 64-bit internal registers
